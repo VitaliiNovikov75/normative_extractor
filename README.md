@@ -77,7 +77,7 @@ git clone https://github.com/VitaliiNovikov75/normative_extractor.git
 cd normative_extractor
 
 sudo systemctl start docker
-docker compose -p normative_extractor up -d
+docker compose -p normative_extractor up -d --build
 
 docker exec normative_extractor-api-1 sphinx-build -b html docs/source docs/build/html
 ```
