@@ -1,6 +1,4 @@
 import pandas as pd
-# from typing import List
-# from .models import Requirement, ExtractionResult
 
 class NormativeOrchestrator:
     """

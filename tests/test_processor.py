@@ -3,10 +3,10 @@ def test_extract_document_name(processor):
     """Проверка извлечения названия ГОСТ/СП из начала текста."""
 
     text = 'Текст документа ГОСТ Р 52289-2019 Технические средства организации дорожного движения...'
-    assert processor.extract_document_name(text) == "ГОСТ Р 52289-2019"
+    assert processor.extract_document_name(text) == 'ГОСТ Р 52289-2019'
 
     bad_text = 'Просто какой-то текст без номеров стандартов.'
-    assert processor.extract_document_name(bad_text) == "Unknown Document"
+    assert processor.extract_document_name(bad_text) == 'Unknown Document'
 
 def test_clean_garbage(processor):
     """Проверка отсечения навигационного шума до раздела 'Область применения'."""

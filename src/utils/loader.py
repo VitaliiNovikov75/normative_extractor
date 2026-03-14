@@ -1,5 +1,4 @@
 import httpx
-# import time
 from selectolax.parser import HTMLParser
 from fake_useragent import UserAgent
 

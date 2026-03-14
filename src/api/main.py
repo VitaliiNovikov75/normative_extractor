@@ -11,9 +11,9 @@ from src.core.orchestrator import NormativeOrchestrator
 from src.utils.loader import MeganormLoader
 
 app = FastAPI(
-    title="API для извлечения нормативных знаний",
-    description="API для автоматического извлечения требований из документов и ГОСТов.",
-    version="1.0.0"
+    title='API для извлечения нормативных знаний',
+    description='API для автоматического извлечения требований из документов и ГОСТов.',
+    version='1.0.0'
 )
 
 loader = MeganormLoader()
