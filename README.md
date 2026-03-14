@@ -88,7 +88,7 @@ docker exec normative_extractor-api-1 sphinx-build -b html docs/source docs/buil
 - sphinx тех. документация: [localhost:8080](http://localhost:8080).
 # Использование
 1. Откройте [localhost:8501](http://localhost:8501);
-2. введите URL документа,;
+2. введите URL документа;
 3. нажмите "Извлечь";
 4. сохраните результаты через "Скачать в CSV" либо "Очистить все данные".
 # Функциональность
@@ -115,4 +115,5 @@ docker exec normative_extractor-api-1 sphinx-build -b html docs/source docs/buil
 - docker — контейнеризация;
 - numpy — библиотека для научных вычислений;
 - httpx — для запросов;
-- fake_useragent — генерация строк User-Agent.
+- fake_useragent — генерация строк User-Agent;
+- sphinx — документация.

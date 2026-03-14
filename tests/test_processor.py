@@ -1,6 +1,4 @@
 # tests/test_processor.py
-# import pytest
-
 def test_extract_document_name(processor):
     """Проверка извлечения названия ГОСТ/СП из начала текста."""
 
