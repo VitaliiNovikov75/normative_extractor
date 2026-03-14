@@ -1,0 +1,273 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ru" data-content_root="../../../">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>src.utils.loader &mdash; документация Экстрактор нормативов 1.0.0</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=9edc463e" />
+
+  
+      <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../_static/documentation_options.js?v=e35015f7"></script>
+      <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="../../../_static/translations.js?v=cd1d70c9"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="../../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Экстрактор нормативов
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Поиск в документации" aria-label="Поиск в документации" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
+              <p class="caption" role="heading"><span class="caption-text">Содержание:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../installation.html">Установка</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../modules.html">src</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../api.html">API Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../api.html#module-src.core.engine">Core Module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../api.html#src.core.engine.ScoringEngine"><code class="docutils literal notranslate"><span class="pre">ScoringEngine</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../api.html#src.core.engine.ScoringEngine.__init__"><code class="docutils literal notranslate"><span class="pre">ScoringEngine.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../api.html#src.core.engine.ScoringEngine.calculate_score"><code class="docutils literal notranslate"><span class="pre">ScoringEngine.calculate_score()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../api.html#src.core.engine.ScoringEngine.extract"><code class="docutils literal notranslate"><span class="pre">ScoringEngine.extract()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../api.html#src.core.engine.ScoringEngine.has_metrics"><code class="docutils literal notranslate"><span class="pre">ScoringEngine.has_metrics()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../api.html#src.core.processor.TextProcessor"><code class="docutils literal notranslate"><span class="pre">TextProcessor</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../api.html#src.core.processor.TextProcessor.__init__"><code class="docutils literal notranslate"><span class="pre">TextProcessor.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../api.html#src.core.processor.TextProcessor.clean_garbage"><code class="docutils literal notranslate"><span class="pre">TextProcessor.clean_garbage()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../api.html#src.core.processor.TextProcessor.extract_document_name"><code class="docutils literal notranslate"><span class="pre">TextProcessor.extract_document_name()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../api.html#src.core.processor.TextProcessor.split_to_sentences"><code class="docutils literal notranslate"><span class="pre">TextProcessor.split_to_sentences()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../api.html#src.core.models.ExtractionResult"><code class="docutils literal notranslate"><span class="pre">ExtractionResult</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../api.html#src.core.models.ExtractionResult.Config"><code class="docutils literal notranslate"><span class="pre">ExtractionResult.Config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../api.html#src.core.models.ExtractionResult.document_name"><code class="docutils literal notranslate"><span class="pre">ExtractionResult.document_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../api.html#src.core.models.ExtractionResult.model_config"><code class="docutils literal notranslate"><span class="pre">ExtractionResult.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../api.html#src.core.models.ExtractionResult.requirements"><code class="docutils literal notranslate"><span class="pre">ExtractionResult.requirements</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../api.html#src.core.models.ExtractionResult.total_found"><code class="docutils literal notranslate"><span class="pre">ExtractionResult.total_found</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../api.html#src.core.models.Requirement"><code class="docutils literal notranslate"><span class="pre">Requirement</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../api.html#src.core.models.Requirement.has_metrics"><code class="docutils literal notranslate"><span class="pre">Requirement.has_metrics</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../api.html#src.core.models.Requirement.model_config"><code class="docutils literal notranslate"><span class="pre">Requirement.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../api.html#src.core.models.Requirement.score"><code class="docutils literal notranslate"><span class="pre">Requirement.score</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../api.html#src.core.models.Requirement.source_url"><code class="docutils literal notranslate"><span class="pre">Requirement.source_url</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../api.html#src.core.models.Requirement.text"><code class="docutils literal notranslate"><span class="pre">Requirement.text</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../api.html#src.core.orchestrator.NormativeOrchestrator"><code class="docutils literal notranslate"><span class="pre">NormativeOrchestrator</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../api.html#src.core.orchestrator.NormativeOrchestrator.__init__"><code class="docutils literal notranslate"><span class="pre">NormativeOrchestrator.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../api.html#src.core.orchestrator.NormativeOrchestrator.run_pipeline"><code class="docutils literal notranslate"><span class="pre">NormativeOrchestrator.run_pipeline()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api.html#module-src.utils.loader">Utils Module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../api.html#src.utils.loader.MeganormLoader"><code class="docutils literal notranslate"><span class="pre">MeganormLoader</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../api.html#src.utils.loader.MeganormLoader.__init__"><code class="docutils literal notranslate"><span class="pre">MeganormLoader.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../api.html#src.utils.loader.MeganormLoader.extract_clean_text"><code class="docutils literal notranslate"><span class="pre">MeganormLoader.extract_clean_text()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../api.html#src.utils.loader.MeganormLoader.fetch_html"><code class="docutils literal notranslate"><span class="pre">MeganormLoader.fetch_html()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../api.html#src.utils.visual.Visualizer"><code class="docutils literal notranslate"><span class="pre">Visualizer</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../api.html#src.utils.visual.Visualizer.__init__"><code class="docutils literal notranslate"><span class="pre">Visualizer.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../api.html#src.utils.visual.Visualizer.plot_document_distribution"><code class="docutils literal notranslate"><span class="pre">Visualizer.plot_document_distribution()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../api.html#src.utils.visual.Visualizer.plot_download_metrics"><code class="docutils literal notranslate"><span class="pre">Visualizer.plot_download_metrics()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../api.html#src.utils.visual.Visualizer.plot_extraction_quality"><code class="docutils literal notranslate"><span class="pre">Visualizer.plot_extraction_quality()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../api.html#src.utils.visual.Visualizer.plot_filter_efficiency"><code class="docutils literal notranslate"><span class="pre">Visualizer.plot_filter_efficiency()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../api.html#api-module">API Module</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Меню навигации для мобильных устройств" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Экстрактор нормативов</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Навигация по страницам">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Код модуля</a></li>
+      <li class="breadcrumb-item active">src.utils.loader</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Исходный код src.utils.loader</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span><span class="w"> </span><span class="nn">httpx</span>
+<span class="c1"># import time</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">selectolax.parser</span><span class="w"> </span><span class="kn">import</span> <span class="n">HTMLParser</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">fake_useragent</span><span class="w"> </span><span class="kn">import</span> <span class="n">UserAgent</span>
+
+<div class="viewcode-block" id="MeganormLoader">
+<a class="viewcode-back" href="../../../api.html#src.utils.loader.MeganormLoader">[документация]</a>
+<span class="k">class</span><span class="w"> </span><span class="nc">MeganormLoader</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Класс для загрузки и парсинга HTML-документов с meganorm.ru.</span>
+
+<span class="sd">    Обеспечивает анонимность запросов через динамические заголовки и</span>
+<span class="sd">    извлекает чистое текстовое тело документа из DOM-структуры.</span>
+
+<span class="sd">    Генерирует правдоподобные заголовки, чтобы сайт не понял, что это робот.</span>
+
+<span class="sd">    Заголовки — это как одежда для запроса. Если все запросы будут в одинаковой</span>
+<span class="sd">    одежде, сайт быстро вычислит бота. Этот класс переодевает каждый запрос</span>
+<span class="sd">    в случайный костюм Chrome или Edge.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="MeganormLoader.__init__">
+<a class="viewcode-back" href="../../../api.html#src.utils.loader.MeganormLoader.__init__">[документация]</a>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Собирает словарь заголовков для HTTP-запроса.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Словарь с заголовками:</span>
+<span class="sd">            - User-Agent: случайный браузер</span>
+<span class="sd">            - Accept: какие форматы файлов поддерживаются</span>
+<span class="sd">            - Accept-Language: предпочитаемые языки ответа</span>
+<span class="sd">            - Referer: источник запроса</span>
+<span class="sd">            - DNT: сигнал &quot;не отслеживать&quot;</span>
+
+<span class="sd">        Значения q=0.9, 0.8 в Accept:</span>
+<span class="sd">            Это весовые коэффициенты предпочтений. Форматы с более высоким q</span>
+<span class="sd">            запрашиваются в первую очередь. По умолчанию q=1.0.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_ua</span> <span class="o">=</span> <span class="n">UserAgent</span><span class="p">(</span><span class="n">browsers</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;chrome&#39;</span><span class="p">,</span> <span class="s1">&#39;edge&#39;</span><span class="p">])</span>
+        <span class="c1"># Заголовки генерируются динамически</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;User-Agent&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_ua</span><span class="o">.</span><span class="n">random</span><span class="p">,</span>
+            <span class="s1">&#39;Accept&#39;</span><span class="p">:</span> <span class="s1">&#39;text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;Accept-Language&#39;</span><span class="p">:</span> <span class="s1">&#39;ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;Referer&#39;</span><span class="p">:</span> <span class="s1">&#39;https://meganorm.ru&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;DNT&#39;</span><span class="p">:</span> <span class="s1">&#39;1&#39;</span>
+        <span class="p">}</span></div>
+
+
+<div class="viewcode-block" id="MeganormLoader.fetch_html">
+<a class="viewcode-back" href="../../../api.html#src.utils.loader.MeganormLoader.fetch_html">[документация]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">fetch_html</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">url</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Выполняет HTTP GET запрос и возвращает HTML-контент.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            url: Целевой URL для загрузки</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            HTML-код страницы в виде строки</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            httpx.HTTPStatusError: При статус-коде &gt;= 400</span>
+<span class="sd">            httpx.RequestError: При сетевых ошибках</span>
+
+<span class="sd">        Description:</span>
+<span class="sd">            - Автоматически следует редиректам</span>
+<span class="sd">            - Использует заголовки из HeaderProvider</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;[INFO] Запрос к </span><span class="si">{</span><span class="n">url</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="c1"># Использую follow_redirects=True, meganorm часто переходит на актуальные версии</span>
+        <span class="k">with</span> <span class="n">httpx</span><span class="o">.</span><span class="n">Client</span><span class="p">(</span><span class="n">headers</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">headers</span><span class="p">,</span> <span class="n">follow_redirects</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mf">15.0</span><span class="p">)</span> <span class="k">as</span> <span class="n">client</span><span class="p">:</span>
+            <span class="n">response</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+            <span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+            <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">text</span></div>
+
+
+<div class="viewcode-block" id="MeganormLoader.extract_clean_text">
+<a class="viewcode-back" href="../../../api.html#src.utils.loader.MeganormLoader.extract_clean_text">[документация]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">extract_clean_text</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">html</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Извлекает чистый текст из HTML, удаляя технические элементы.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            html: Сырой HTML-код страницы</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Текст документа с разделением строк</span>
+
+<span class="sd">        Description:</span>
+<span class="sd">            1. Поиск контейнера с контентом (div.text_doc → article → body)</span>
+<span class="sd">            2. Удаление script, style, ins, ads</span>
+<span class="sd">            3. Извлечение текста с сохранением структуры абзацев</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">tree</span> <span class="o">=</span> <span class="n">HTMLParser</span><span class="p">(</span><span class="n">html</span><span class="p">)</span>
+
+        <span class="c1"># На meganorm основной контент обычно лежит в div с определенным id или классом.</span>
+        <span class="c1"># Поиск центрального блока текста. Если селектор не сработает, выбор body</span>
+        <span class="n">content_node</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">css_first</span><span class="p">(</span><span class="s1">&#39;div.text_doc&#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="n">tree</span><span class="o">.</span><span class="n">css_first</span><span class="p">(</span><span class="s1">&#39;article&#39;</span><span class="p">)</span> <span class="ow">or</span> <span class="n">tree</span><span class="o">.</span><span class="n">css_first</span><span class="p">(</span><span class="s1">&#39;body&#39;</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">content_node</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s2">&quot;&quot;</span>
+
+        <span class="c1"># Удаляю скрипты и стили, чтобы они не попали в сегментацию</span>
+        <span class="k">for</span> <span class="n">tag</span> <span class="ow">in</span> <span class="n">content_node</span><span class="o">.</span><span class="n">css</span><span class="p">(</span><span class="s1">&#39;script, style, ins, ads&#39;</span><span class="p">):</span>
+            <span class="n">tag</span><span class="o">.</span><span class="n">decompose</span><span class="p">()</span>
+
+        <span class="c1"># Использую сепаратор &#39;\n&#39;, чтобы сохранить границы строк перед чисткой</span>
+        <span class="k">return</span> <span class="n">content_node</span><span class="o">.</span><span class="n">text</span><span class="p">(</span><span class="n">separator</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">strip</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></div>
+</div>
+
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Авторские права 2026, Виталий Новиков. </p>
+  </div>
+
+  Собрано при помощи <a href="https://www.sphinx-doc.org/">Sphinx</a> с использованием
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы,</a>
+    предоставленной <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
