@@ -1,0 +1,17 @@
+fastapi
+pandas
+uvicorn
+numpy
+streamlit
+httpx
+selectolax
+fake_useragent
+matplotlib
+pydantic
+sphinx
+sphinx-autodoc-typehints
+sphinx_rtd_theme
+natasha
+joblib
+scikit-learn
+setuptools<81
